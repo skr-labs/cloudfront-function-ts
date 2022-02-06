@@ -1,0 +1,36 @@
+{
+    "name": "cloudfront-function-ts",
+    "version": "1.0.0",
+    "description": "A boilerplate repository for writing CloudFront functions in Typescript with unit testing",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "watch": "tsc --project . --watch",
+        "build": "tsc --project . ",
+        "cfnify": "node scripts/postbuild.js ./build/src/index.js",
+        "test": "nyc --nyc-path ./.nycrc mocha \"build/test\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/skr-labs/cloudfront-function-ts.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/skr-labs/cloudfront-function-ts/issues"
+    },
+    "homepage": "https://github.com/skr-labs/cloudfront-function-ts#readme",
+    "devDependencies": {
+        "@types/chai": "^4.3.0",
+        "@types/mocha": "^9.1.0",
+        "@types/node": "^17.0.15",
+        "chai": "^4.3.6",
+        "minify": "^7.2.2",
+        "mocha": "^9.2.0",
+        "nyc": "^15.1.0",
+        "typescript": "^4.5.5"
+    }
+}

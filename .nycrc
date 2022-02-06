@@ -1,0 +1,44 @@
+{
+	"lines": 100,
+	"statements": 100,
+	"functions": 100,
+	"branches": 100,
+
+	"check-coverage": true,
+	"per-file": false,
+	"cache": false,
+	"all": false,
+	"eager": false,
+	"babel-cache": false,
+	"es-modules": true,
+	"source-map": true,
+	"produce-source-map": false,
+	"compact": true,
+	"preserve-comments": true,
+	"instrument": true,
+	"hook-require": true,
+	"hoom-run-in-context": false,
+	"hoom-run-in-this-context": false,
+	"show-process-tree": false,
+	"clean": true,
+	"skip-empty": false,
+	"skip-full": false,
+	"exclude-after-remap": true,
+
+	"extension": [
+		".ts"
+	],
+		"require": [
+	],
+	"include": [
+		"src/**",
+		"**/build/src/**"
+	],
+	"exclude": [],
+	"reporter": [
+		"lcov",
+		"text-summary"
+	],
+	"temp-dir": "./build/coverage/temp",
+	"report-dir": "./build/coverage"
+}
