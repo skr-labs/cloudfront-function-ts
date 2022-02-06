@@ -2,6 +2,16 @@
 
 A boilerplate repository for writing CloudFront functions in Typescript with unit testing.
 
+- [cloudfront-function-ts](#cloudfront-function-ts)
+- [Why?](#why)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Running](#running)
+- [Working with CloudFront](#working-with-cloudfront)
+  - [Via the AWS Console](#via-the-aws-console)
+  - [Via CloudFormation](#via-cloudformation)
+    - [Secret Sauce](#secret-sauce)
+
 # Why?
 
 The AWS CloudFront documentation for CloudFront functions provides examples in Javascript, and don't provide a whole lot of information on making the functions testable and still function within the CloudFront Functions Javascript execution environment.
